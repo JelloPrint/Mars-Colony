@@ -11,6 +11,7 @@ import { EncountersComponent } from './components/encounters/encounters.componen
 import { ReportComponent } from './components/report/report.component';
 import { NotFoundComponent } from './components/notfound/notfound.component';
 
+import { appRoutes } from './app.routes';
 
 @NgModule({
   declarations: [
