@@ -3,7 +3,6 @@ import { Alien } from '../models/alien';
 import { Http, Headers } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 
-
 @Injectable()
 export class AlienService {
     aliensUrl = 'https://red-wdp-api.herokuapp.com/api/mars/aliens';
