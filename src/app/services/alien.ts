@@ -7,8 +7,8 @@ import 'rxjs/add/operator/toPromise';
 export class AlienService {
     aliensUrl = 'https://red-wdp-api.herokuapp.com/api/mars/aliens';
 
-  constructor(private http: Http) {
-  }
+    constructor(private http: Http) {
+    }
 
     getAliens(): Promise<Alien[]> {
       return this.http.get(this.aliensUrl)
@@ -17,7 +17,7 @@ export class AlienService {
                  .catch(this.handleError);
     }
 
-    private handleError(error: any) {
+    private handleError(error: any): Promise<any> {
       console.error('An error occurred', error);
       return Promise.reject(error.message || error);
     }

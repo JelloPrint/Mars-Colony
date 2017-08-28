@@ -6,7 +6,7 @@ import { ReportComponent } from './components/report/report.component';
 import { NotFoundComponent } from './components/notfound/notfound.component';
 
 export const appRoutes: Routes = [
-  { path: '', component: WelcomeComponent },
+  { path: '', component: WelcomeComponent, data: { state: 'welcome'} },
   { path: 'register', component: RegisterComponent },
   { path: 'encounters', component: EncountersComponent },
   { path: 'report', component: ReportComponent },

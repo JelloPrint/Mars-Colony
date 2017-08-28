@@ -1,3 +1,22 @@
-<p>
-  report works!
-</p>
+<div class="page report-page">
+  <h1>Report Encounter</h1>
+    <p>Safety on Mars is your responsibility</p>
+  <div class="report-form">
+    <form [formGroup]="registerForm" novalidate (submit)="registerReport()" class="register-report">
+      <!--<input type="text" placeholder="Select alien type">-->
+
+      <select formControlName="atype">
+        <option value="">Select alien type</option>
+        <option *ngFor="let alien of aliens" value="{{alien.type}}">{{alien.type}}</option> 
+      </select>
+
+      <textarea class="report-text-area" type="text" placeholder="Action taken" formControlName="action"></textarea>
+
+      <a>
+        <button [disabled]="registerForm.status === 'INVALID'" class="button" type="submit">Submit Report</button>
+      </a>
+    </form>
+
+    {{registerForm.value | json}} {{registerForm.status | json}}
+  </div> <!-- .report.form -->
+</div> <!-- .page .report-page -->

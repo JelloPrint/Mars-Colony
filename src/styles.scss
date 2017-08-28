@@ -1,0 +1,53 @@
+@import "./sass/reset";
+
+/* Globals */
+html, body {
+  height: 100%;
+  line-height: 1;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+  overflow: hidden;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, p {
+  color: white;
+  display: block;
+  font-size: 2rem;
+  padding: 2rem 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.register-page, .report-page, .encounters-page {
+  background: url('/assets/images/mars.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-attachment: fixed;
+}
+.button{
+  padding: 1rem 2rem;
+  background: transparent;
+  font-weight: 100;
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
+  font-family: 'Roboto';
+  color: #fff;
+  border: none;
+  box-shadow: none;
+}

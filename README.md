@@ -1,5 +1,21 @@
 # MarsColonyApp
 
+This web-based application was a code along assignment for Red Academy using Angular 2.
+
+Technology used
+
+- Angular 2
+- Angular CLI
+- Google Fonts
+- HTML
+- Postman 
+- SCSS
+
+Personal Learning
+
+Learned how to set up an Angular CLI environment via terminal. Became familiar with the structure and how the pieces fit together. Components, Models, Services etc. Learned how to switch the default CSS setup to SASS based. Basic understanding of the postman application as simple transitions. 
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.1.
 
 ## Development server

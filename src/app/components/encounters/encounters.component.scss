@@ -1,0 +1,39 @@
+.encounters-top-half {
+  background: white;
+  h2,
+  p {
+    color: black;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+  }
+  .alien-list {
+    color: black;
+    height: 60vh;
+    padding-left: 20px;
+    overflow: scroll;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    li p {
+      text-align: left;
+      font-size: 18px;
+      margin: 10px 0px;
+      padding-top: 0;
+    }
+    li :first-child {
+      font-weight: 400;
+    }
+  }
+}
+.encounters-bottom-half {
+  .report-encounter-text {
+    text-align: center;
+  }
+}
+.report-link {
+  margin-top: 3rem;
+  a {
+    color: transparent;
+  }
+}
